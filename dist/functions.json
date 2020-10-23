@@ -1,0 +1,44 @@
+{
+    "functions": [
+        {
+            "description": "Girilen iki özelliğine göre akışkanın istenilen termodinamik özelliğini hesaplar\nArkaplanda CoolProp kütüphanesini kullanmaktadır (www.coolprop.org)\nÖrnek: =propsSI(\"T\",\"P\",101325.0,\"Q\",0.5,\"Water\")",
+            "id": "PROPSSI",
+            "name": "PROPSSI",
+            "parameters": [
+                {
+                    "description": "Hesaplanacak özellik.",
+                    "name": "p",
+                    "type": "string"
+                },
+                {
+                    "description": "Ilk özelliğin ismi.",
+                    "name": "p1",
+                    "type": "string"
+                },
+                {
+                    "description": "Ilk özelliğin değeri (SI).",
+                    "name": "v1",
+                    "type": "number"
+                },
+                {
+                    "description": "Ikinci özelliğin ismi.",
+                    "name": "p2",
+                    "type": "string"
+                },
+                {
+                    "description": "Ikinci özelliğin değeri (SI).",
+                    "name": "v2",
+                    "type": "number"
+                },
+                {
+                    "description": "Akışkanın ismi.",
+                    "name": "f",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        }
+    ]
+}
